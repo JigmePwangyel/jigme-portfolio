@@ -25,9 +25,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#navbar {
+  background-color: #fafafa;
+}
 p {
   color: #5c5c5c;
 }
+
 span {
   color: #5c5c5c;
+}
+
+h2 {
+  color: #5c5c5c;
+}
+
+button {
+  background-color: #5c5c5c;
 }
