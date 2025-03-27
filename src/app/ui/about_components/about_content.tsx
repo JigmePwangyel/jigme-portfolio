@@ -18,10 +18,11 @@ export default function AboutComponent() {
         </div>
         <div className="flex flex-col w-1/2 ">
           <p className="w-fit">
-            Hey there! I'm a soon-to-be IT engineering graduate from Bhutan,
-            navigating my way through the world of full-stack development.
-            Coding is my thing—I love the thrill of solving problems, breaking
-            things (on purpose), and then fixing them again (hopefully).
+            Hey there! I&apos;m a soon-to-be IT engineering graduate from
+            Bhutan, navigating my way through the world of full-stack
+            development. Coding is my thing—I love the thrill of solving
+            problems, breaking things (on purpose), and then fixing them again
+            (hopefully).
           </p>
           <p className="w-fit mt-7">
             When I'm not busy building software, you can probably find me

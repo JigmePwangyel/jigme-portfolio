@@ -28,18 +28,19 @@ body {
 #navbar {
   background-color: #fafafa;
 }
+
+#card_color {
+  background-color: #a1cda8;
+}
+
+h2,
+h4,
+span,
 p {
   color: #5c5c5c;
 }
 
-span {
-  color: #5c5c5c;
-}
-
-h2 {
-  color: #5c5c5c;
-}
-
-button {
+button,
+#tag {
   background-color: #5c5c5c;
 }

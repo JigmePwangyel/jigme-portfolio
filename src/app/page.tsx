@@ -2,6 +2,7 @@ import Navbar from "@/app/ui/navbar";
 import Home from "@/app/ui/home";
 import About from "@/app/ui/about";
 import Skills from "@/app/ui/skills";
+import Portfolio from "@/app/ui/portfolio";
 export default function Page() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Page() {
         <Home />
         <About />
         <Skills />
+        <Portfolio />
       </div>
     </>
   );
