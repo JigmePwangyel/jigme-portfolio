@@ -4,12 +4,22 @@ import Image from "next/image";
 interface ButtonProps {
   title: string;
   icon: string; // The icon can now be an SVG or any other React component
-  onClick: () => void;
+  type: "button" | "submit" | "reset";
+  onClick?: () => void;
+  disable: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ title, icon, onClick }) => {
+const Button: React.FC<ButtonProps> = ({
+  title,
+  icon,
+  type,
+  disable,
+  onClick,
+}) => {
   return (
     <button
+      type={type}
+      disabled={disable}
       onClick={onClick}
       className="flex items-center space-x-2 px-4 py-4 bg-blue-500 text-white rounded-3xl w-fit hover:cursor-pointer transform transition-transform duration-200 hover:scale-110"
     >

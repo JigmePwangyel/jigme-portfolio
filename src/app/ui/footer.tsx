@@ -1,55 +1,67 @@
 "use client";
 
-import Link from "next/link";
+import Image from "next/image";
 import { scrollToSection } from "@/app/utils/scroll";
 
-export default function Navbar() {
+export default function Footer() {
   return (
-    <nav className="pt-8 pb-8 ml-22 mr-22">
-      <div className="flex flex-wrap items-center justify-between w-full">
-        <Link href="/">
-          <span className="font-extrabold text-2xl">Jigme</span>
-        </Link>
-        <div className="w-96">
-          <ul className="flex items-center justify-between">
+    <section className="h-full mb-28">
+      <div className="flex flex-1 flex-col items-center justify-center w-full p-10">
+        <h2 className="px-20 py-5 font-extrabold text-2xl">Jigme</h2>
+        <p>Code in progress, always evolving.</p>
+        <div className="w-1/2 p-5">
+          <ul className="flex justify-around">
             <li
               onClick={() => scrollToSection("home")}
-              className="text-gray font-medium relative group cursor-pointer"
+              className="relative group cursor-pointer"
             >
               Home
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 transition-all duration-300 group-hover:scale-x-100"></span>
             </li>
+
             <li
               onClick={() => scrollToSection("about")}
-              className="text-gray font-medium relative group cursor-pointer"
+              className="relative group cursor-pointer"
             >
               About
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 transition-all duration-300 group-hover:scale-x-100"></span>
             </li>
             <li
               onClick={() => scrollToSection("skills")}
-              className="text-gray font-medium relative group cursor-pointer"
+              className="relative group cursor-pointer"
             >
               Skills
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 transition-all duration-300 group-hover:scale-x-100"></span>
             </li>
             <li
               onClick={() => scrollToSection("portfolio")}
-              className="text-gray font-medium relative group cursor-pointer"
+              className="relative group cursor-pointer"
             >
               Portfolio
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 transition-all duration-300 group-hover:scale-x-100"></span>
             </li>
             <li
               onClick={() => scrollToSection("contact")}
-              className="text-gray font-medium relative group cursor-pointer"
+              className="relative group cursor-pointer"
             >
               Contact
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 transition-all duration-300 group-hover:scale-x-100"></span>
             </li>
           </ul>
         </div>
+        <div className="flex w-1/2 items-center justify-center">
+          <Image
+            src="/copyright.png"
+            alt="About Image"
+            width={15}
+            height={15}
+            className="mr-2"
+          />
+          <p className="font-medium">
+            2025 Jigme Phuntsho Wangyel. All Rights Reserved.
+          </p>
+        </div>
       </div>
-    </nav>
+    </section>
   );
 }

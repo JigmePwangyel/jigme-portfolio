@@ -6,7 +6,13 @@ import Button from "@/app/ui/button";
 
 export default function AboutComponent() {
   const handleClick = () => {
-    alert("Button clicked!");
+    const cv = "Jigme_Phuntsho_Wangyel_CV.pdf";
+    const link = document.createElement("a");
+    link.href = cv;
+    link.download = "Jigme Phuntsho Wangyel CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -34,9 +40,11 @@ export default function AboutComponent() {
           </p>
           <div className="mt-7">
             <Button
+              type="button"
               title="Download CV"
               icon="/file.svg"
               onClick={handleClick}
+              disable={false}
             />
           </div>
         </div>
