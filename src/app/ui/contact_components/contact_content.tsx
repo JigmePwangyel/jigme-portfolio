@@ -26,7 +26,7 @@ export default function ContactsContent() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Let's work together
+            Let&apos;s work together
           </motion.h2>
           <p className="text-xs sm:text-sm md:text-sm lg:text-base">
             Got an idea or need a developer? I&apos;m always up for exciting
