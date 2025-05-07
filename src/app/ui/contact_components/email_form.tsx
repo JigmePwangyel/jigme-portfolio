@@ -1,9 +1,9 @@
 "use client";
 
 import Button from "@/app/ui/button";
-
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion"; // Import motion
 
 export default function EmailForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -50,9 +50,20 @@ export default function EmailForm() {
       setIsSubmitting(false);
     }
   };
+
   return (
-    <form onSubmit={handleSubmit} className="p-10 flex flex-col gap-y-10">
-      <div>
+    <motion.form
+      onSubmit={handleSubmit}
+      className="p-2 md:p-4 lg:p-10 flex flex-col gap-y-10"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <input
           type="text"
           name="name"
@@ -62,8 +73,13 @@ export default function EmailForm() {
           required
           className="border px-4 py-5 rounded-md w-full"
         />
-      </div>
-      <div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+      >
         <input
           type="email"
           name="email"
@@ -71,10 +87,15 @@ export default function EmailForm() {
           onChange={handleChange}
           placeholder="Email"
           required
-          className="border px-4 py-5 rounded-md w-full "
+          className="border px-4 py-5 rounded-md w-full"
         />
-      </div>
-      <div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
         <textarea
           name="message"
           value={formData.message}
@@ -83,15 +104,20 @@ export default function EmailForm() {
           required
           className="border px-4 py-5 rounded-md w-full h-36"
         />
-      </div>
-      <div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
         <Button
           title={isSubmitting ? "Sending..." : "Send Message"}
           icon="/Button/send.png"
           type="submit"
           disable={isSubmitting}
         />
-      </div>
-    </form>
+      </motion.div>
+    </motion.form>
   );
 }
