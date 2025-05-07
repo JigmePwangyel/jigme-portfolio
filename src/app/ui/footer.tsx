@@ -38,7 +38,7 @@ export default function Footer() {
           transition={{ delay: 0.6, duration: 0.6 }}
         >
           {["home", "about", "skills", "portfolio", "contact"].map(
-            (section, i) => (
+            (section) => (
               <motion.li
                 key={section}
                 onClick={() => scrollToSection(section)}

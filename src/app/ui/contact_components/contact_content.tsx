@@ -29,9 +29,9 @@ export default function ContactsContent() {
             Let's work together
           </motion.h2>
           <p className="text-xs sm:text-sm md:text-sm lg:text-base">
-            Got an idea or need a developer? I’m always up for exciting
-            projects, collaborations, and problem-solving. Let’s connect and
-            build something awesome!
+            Got an idea or need a developer? I&apos;m always up for exciting
+            projects, collaborations, and problem-solving. Let&apos;s connect
+            and build something awesome!
           </p>
         </div>
         <div className="w-full lg:w-1/2">

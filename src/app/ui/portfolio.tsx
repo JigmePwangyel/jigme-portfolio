@@ -1,5 +1,4 @@
 import PortfolioComponent from "@/app/ui/portfolio_components/portfolio_content";
-import { motion } from "framer-motion";
 export default function Portfolio() {
   return (
     <section

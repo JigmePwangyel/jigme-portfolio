@@ -63,7 +63,7 @@ export default function HomeContent() {
         viewport={{ once: true }}
       >
         <p className="font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl mb-1 md:mb-4">
-          Hello, I'm Jigme,
+          Hello, I&apos;m Jigme,
         </p>
         <motion.h1
           className="font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"

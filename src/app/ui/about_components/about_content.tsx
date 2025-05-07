@@ -62,17 +62,17 @@ export default function AboutComponent() {
             Hey there! I&apos;m a soon-to-be IT engineering graduate from
             Bhutan, navigating my way through the world of full-stack
             development. Coding is my thing—I love the thrill of solving
-            problems, breaking things (on purpose), and then fixing them again
-            (hopefully).
+            problems, breaking things &lsquo;on purpose&rsquo;, and then fixing
+            them again &lsquo;hopefully&rsquo;.
           </p>
 
           <p className="mt-4 sm:mt-5 md:mt-6 lg:mt-7 text-xs sm:text-sm md:text-sm lg:text-base leading-relaxed">
-            When I'm not busy building software, you can probably find me
-            shooting hoops, binge-watching anime, or diving into a good book (or
-            at least trying to build that habit). My goal? To become a software
-            engineer and craft solutions that make a real impact. Until then,
-            I'll be here, coding away and occasionally questioning my life
-            choices when a bug refuses to go away.
+            When I&apos;m not busy building software, you can probably find me
+            shooting hoops, binge-watching anime, or diving into a good book
+            &lsquo;or at least trying to build that habit&rsquo;. My goal? To
+            become a software engineer and craft solutions that make a real
+            impact. Until then, I&apos;ll be here, coding away and occasionally
+            questioning my life choices when a bug refuses to go away.
           </p>
 
           <div className="mt-6 sm:mt-7 md:mt-8 lg:mt-10">

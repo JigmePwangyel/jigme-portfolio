@@ -27,7 +27,7 @@ export default function PortfolioComponent() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        Things I've Built
+        Things I&apos;ve Built
       </motion.p>
 
       {/* Portfolio Cards */}
@@ -106,8 +106,8 @@ export default function PortfolioComponent() {
           <div className="w-full lg:w-1/2 p-6">
             <h4 className="font-bold text-xl mb-4">CST-IMS</h4>
             <p className="mb-4 text-xs sm:text-sm md:text-sm lg:text-sm">
-              CST IMS is a centralized system built using Odoo's Employee and
-              Time Off modules, with custom modules for Student Information,
+              CST IMS is a centralized system built using Odoo&apos;s Employee
+              and Time Off modules, with custom modules for Student Information,
               Student Leave, Academic Management, and Result Processing to
               streamline administrative and academic operations at the College
               of Science and Technology.
