@@ -113,7 +113,7 @@ export default function EmailForm() {
       >
         <Button
           title={isSubmitting ? "Sending..." : "Send Message"}
-          icon="/Button/Send.png"
+          icon="/send.svg"
           type="submit"
           disable={isSubmitting}
         />
