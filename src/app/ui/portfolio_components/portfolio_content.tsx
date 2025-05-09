@@ -62,7 +62,7 @@ export default function PortfolioComponent() {
               report generation
             </p>
             <div className="flex flex-wrap gap-2">
-              <Tag text="Odoo" />
+              <Tag text="NextJS" />
               <Tag text="ReactJS" />
               <Tag text="MongoDB" />
               <Tag text="Javascript" />
