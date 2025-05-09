@@ -53,7 +53,7 @@ export default function PortfolioComponent() {
             />
           </div>
           <div className="w-full lg:w-1/2 p-6">
-            <h4 className="font-bold text-xl mb-4">RUM ACM MIS</h4>
+            <h4 className="font-bold text-xl mb-4">RUB ACM MIS</h4>
             <p className="mb-4 text-xs sm:text-sm md:text-sm lg:text-sm">
               RUB-ACM-MIS is a web-based platform built to streamline the
               management of the ACM Student Chapter at the College of Science
@@ -164,7 +164,7 @@ export default function PortfolioComponent() {
             <div className="flex flex-wrap gap-2">
               <Tag text="AI" />
               <Tag text="Convolution Neural Network" />
-              <Tag text="VGG16" />
+              <Tag text="VGG19" />
               <Tag text="ReactJS" />
               <Tag text="Flask" />
             </div>
